@@ -1,0 +1,24 @@
+<body>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+        <div *ngFor="let cat of category">
+            <tr>
+                <app-product-category-row [item]="cat"></app-product-category-row>
+            </tr>
+            <div *ngFor="let productData of Json">
+                <span *ngIf="cat == productData.category ">
+                    <tr>
+
+                        <app-product-row [item]="productData"></app-product-row>
+
+                    </tr>
+                </span>
+            </div>
+        </div>
+    </table>
+    <p> {{isInStock}} {{searchTextData}}</p>
+</body>

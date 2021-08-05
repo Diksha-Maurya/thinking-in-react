@@ -1,0 +1,5 @@
+<input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="search">
+<button (click)="msgToProductTable()">search</button>
+<br>
+
+<input type="checkbox" [value]='checked' (change)="checkInStock()">Only Show Products in Stock<br>

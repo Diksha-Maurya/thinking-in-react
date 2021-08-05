@@ -1,0 +1,8 @@
+<tr>
+    <td>
+        <span *ngIf="item.stocked == false" style="color:red"><b>{{item.name}}</b></span>
+        <span *ngIf="item.stocked == true">{{item.name}}</span>
+    </td>
+    <td>{{item.price}}</td>
+
+</tr>

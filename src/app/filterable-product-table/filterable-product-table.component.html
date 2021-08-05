@@ -1,0 +1,5 @@
+<app-search-bar (msgToSibling)="isStocked($event)" (searchTextToProductTable)="sendSearchText($event)">
+</app-search-bar>
+
+<app-product-table [searchTextData]='searchTextData' [isInStock]='isInStock'>
+</app-product-table>
